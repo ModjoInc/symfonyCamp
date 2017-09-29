@@ -26,3 +26,7 @@
 2. **php bin/console doctrine:generate:crud**
 3. **php bin/console doctrine:schema:validate**
 4. 
+
+## Usage
+1. Clear the cache : **php bin/console cache:clear**
+2. 
