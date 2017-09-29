@@ -1,0 +1,34 @@
+habib_platform_home:
+    path:      /{page}
+    defaults:
+        _controller: HabibPlatformBundle:Advert:index
+        page:        1
+    requirements:
+        page: \d*
+
+habib_platform_view:
+    path:      /advert/{id}
+    defaults:
+        _controller: HabibPlatformBundle:Advert:view
+    requirements:
+        id: \d+
+
+habib_platform_add:
+    path:       /add
+    defaults:
+        _controller: HabibPlatformBundle:Advert:add
+
+
+habib_platform_edit:
+    path:       /edit/{id}
+    defaults:
+        _controller: HabibPlatformBundle:Advert:edit
+    requirements:
+        id: \d+
+
+habib_platform_delete:
+    path:       /delete/{id}
+    defaults:
+        _controller: HabibPlatformBundle:Advert:delete
+    requirements:
+        id: \d+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>View</title>
+  </head>
+  <body>
+    <h1>View announce n° {{ id }}</h1>
+    <div>
+      {% for message in app.session.flashbag.get('info') %}
+        <p>Message Flash : {{ message }}</p>
+      {% endfor %}
+    </div>
+
+    <p>ici on peut lire l'annonce ayant comme id : {{ id }}</p>
+    <p>pas pour l'instant</p>
+
+</body>
+</html>

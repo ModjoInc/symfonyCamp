@@ -1,0 +1,4 @@
+services:
+#    habib_platform.example:
+#        class: Habib\PlatformBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
